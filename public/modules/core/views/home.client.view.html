@@ -1,17 +1,29 @@
 <section data-ng-controller="HomeController">
-   <div id="formContainer container">
-            <form id="" method="post" action="./">
-                <a href="javascript:void(0)" id="flipToRecover" class="flipLink">Forgot?</a>
-                <input type="text" name="loginEmail" id="loginEmail" placeholder="Email" />
-                <input type="password" name="loginPass" id="loginPass" placeholder="Password" />
-                <input type="submit" name="submit" value="Login" />
-            </form>
-            <form id="recover" method="post" action="./">
-                <a href="javascript:void(0)" id="flipToLogin" class="flipLink">Forgot?</a>
-                <input type="text" name="recoverEmail" id="recoverEmail" placeholder="Your Email" />
-                <input type="submit" name="submit" value="Recover" />
-            </form>
-        </div>
+   <div id="wrapper">
+
+   <form name="login-form" class="login-form" action="" method="post">
+   
+      <div class="header">
+      <h1>Login Form</h1>
+      <span>Fill out the form below to login to my super awesome imaginary control panel.</span>
+      </div>
+   
+      <div class="content">
+      <input name="username" type="text" class="input username" placeholder="Username" />
+      <div class="user-icon"></div>
+      <input name="password" type="password" class="input password" placeholder="Password" />
+      <div class="pass-icon"></div>    
+      </div>
+
+      <div class="footer">
+      <input type="submit" name="submit" value="Login" class="button" />
+      <input type="submit" name="submit" value="Register" class="register" />
+      </div>
+   
+   </form>
+
+</div>
+<div class="gradient"></div>
 </section>
 
 <script type="text/javascript">
