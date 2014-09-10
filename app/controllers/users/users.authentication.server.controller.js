@@ -26,7 +26,9 @@ exports.signup = function(req, res) {
 
 	// Then save the user 
 	user.save(function(err) {
+		console.log("in save");
 		if (err) {
+			console.log("inside error")
 			return res.status(400).send({
 				message: errorHandler.getErrorMessage(err)
 			});
@@ -50,11 +52,14 @@ exports.signup = function(req, res) {
  * Signin after passport authentication
  */
 exports.signin = function(req, res, next) {
+	console.log("herejjj");
 	passport.authenticate('local', function(err, user, info) {
 		if (err || !user) {
+			console.log(info);
 			res.status(400).send(info);
 		} else {
 			// Remove sensitive data before login
+			console.log("kkkk");
 			user.password = undefined;
 			user.salt = undefined;
 
