@@ -1,7 +1,7 @@
 {
 	"name": "meanjs",
 	"version": "0.3.2",
-	"description": "Bug Tracker",
+	"description": "Bug Tracker using MEAN js",
 	"dependencies": {
 		"bootstrap": "~3",
 		"angular": "~1.2",
